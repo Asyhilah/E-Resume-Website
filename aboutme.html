@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>About Me</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #DCDCE6;
+        }
+
+        .about-container {
+            width: 75%;
+            max-width: 900px;
+            margin: 60px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0A3E76;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+      
+        .about-flex {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 12px;
+            border: 3px solid #021D51;
+            box-shadow: 0px 5px 12px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #021D51;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            text-align: justify;
+        }
+
+        .video-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        video {
+            width: 80%;
+            max-width: 700px;
+            border-radius: 10px;
+            border: 2px solid #021D51;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #021D51;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+       
+        @media (max-width: 768px) {
+            .about-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="about-container">
+
+    <h1><i class="fa-solid fa-user"></i> About Me</h1>
+
+
+    <div class="about-flex">
+
+        <div class="about-text">
+            <h2>Personal Background</h2>
+            <p>
+                I am Nur Asyhilah Binti Ahmad, currently pursuing my final year of Bachelor of Information Science (Hons) in Library Management at Universiti Teknologi Mara (UiTM) Kedah Branch.
+                I am originally from Gerik, Perak and live in Kampung Padang Kunyit.
+                Previously, I completed my Sijil Tinggi Persekolahan Malaysia (STPM) at Sekolah Menengah Kebangsaan Seri Budiman in Gerik, Perak, 
+                and SPM at Sekolah Menengah Kebangsaan Gerik. Throughout my studies,I have gained basic knowledge in the field of information management, academic research, 
+                and essential digital tools such as Microsoft Office and Google Workspace.
+            </p>
+
+            <h2>Career Goals</h2>
+            <p>
+                My career objective is to become a competent and responsible information professional who contributes positively
+                to the organization and society. I aim to continuously improve my technical skills, communication abilities,
+                and professional ethics in order to meet the demands of the modern working environment.
+            </p>
+        </div>
+
+     
+        <div class="about-image">
+            <img src="img1.jpg" alt="My Profile Photo">
+        </div>
+
+    </div>
+
+    <div class="video-section">
+        <h2>Getting to Know Me!</h2>
+
+        <video controls>
+            <source src="vid1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Nur Asyhilah Ahmad. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+

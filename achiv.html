@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Achievements</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #DCDCE6;
+        }
+
+        .achievement-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0A3E76;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+     
+        .audio-control {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .audio-control button {
+            background-color: #021D51;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            font-size: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .audio-control button:hover {
+            background-color: #0540b3;
+        }
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .achievement-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .achievement-card img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #021D51;
+            margin-bottom: 15px;
+        }
+
+        .achievement-card h3 {
+            color: #021D51;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .achievement-card p {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #021D51;
+            color: white;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="achievement-container">
+
+    <h1><i class="fa-solid fa-trophy"></i> Achievements & Involvement</h1>
+
+
+    <div class="audio-control">
+        <audio id="bgAudio" autoplay loop>
+            <source src="audio.mp3" type="audio/mpeg">
+            
+        </audio>
+
+        <button onclick="toggleAudio()">
+            <i class="fa-solid fa-pause"></i> 
+        </button>
+    </div>
+
+    <div class="achievement-grid">
+
+        <div class="achievement-card">
+            <img src="certi1.jpeg" alt="Certificate 1">
+            <h3>Program Participation</h3>
+            <p>Artificial Intelligence (AI) Forum in Information Services Management.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="certi2.png" alt="Certificate 2">
+            <h3>Program Participation</h3>
+            <p>Completed HR Excel-Erator: Mastering Data For Future Leaders program.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="certi3.jpeg" alt="Certificate 3">
+            <h3>Program Participation</h3>
+            <p>Information Literacy @Library Program: One Student One Session (1SOS).</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Nur Asyhilah Ahmad. All rights reserved.
+</footer>
+
+
+<script>
+    const audio = document.getElementById("bgAudio");
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+</body>
+</html>
+
