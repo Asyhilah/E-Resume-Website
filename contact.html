@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #DCDCE6;
+        }
+
+        .contact-container {
+            width: 70%;
+            max-width: 600px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0A3E76;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .form-icon {
+            color: #021D51;
+            margin-right: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #021D51;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #04338a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #021D51;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contact-container">
+    <h1><i class="fa-solid fa-envelope"></i> Contact Me</h1>
+
+    <p>
+        If you have any inquiries, feedback, or would like to contact me for academic or professional purposes,
+        please complete the form below.
+    </p>
+
+   
+    <form action="mailto:nurasyhilahmad07@gmail.com" method="post" enctype="text/plain">
+
+        <label><i class="fa-solid fa-user form-icon"></i> Full Name</label>
+        <input type="text" name="Full Name" placeholder="Enter your full name" required>
+
+        <label><i class="fa-solid fa-envelope form-icon"></i> Email Address</label>
+        <input type="email" name="Email" placeholder="Enter your email address" required>
+
+        <label><i class="fa-solid fa-book form-icon"></i> Subject</label>
+        <input type="text" name="Subject" placeholder="Enter subject" required>
+
+        <label><i class="fa-solid fa-comment form-icon"></i> Message</label>
+        <textarea name="Message" placeholder="Write your message here" required></textarea>
+
+        <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Submit
+        </button>
+
+    </form>
+</div>
+
+<footer>
+    © 2025 Nur Asyhilah Ahmad. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
