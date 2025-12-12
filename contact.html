@@ -76,12 +76,12 @@
 
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 12px;
             background-color: #021D51;
             color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 80px; 
+            font-size: 14px;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -96,32 +96,31 @@
         please complete the form below.
     </p>
 
-   
-    <form action="mailto:nurasyhilahmad07@gmail.com" method="post" enctype="text/plain">
+    <!-- Web3Forms Form -->
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="d92e13b2-735b-484c-9884-b85edb5f7499">
 
         <label><i class="fa-solid fa-user form-icon"></i> Full Name</label>
-        <input type="text" name="Full Name" placeholder="Enter your full name" required>
+        <input type="text" name="name" placeholder="Enter your full name" required>
 
         <label><i class="fa-solid fa-envelope form-icon"></i> Email Address</label>
-        <input type="email" name="Email" placeholder="Enter your email address" required>
-
-        <label><i class="fa-solid fa-book form-icon"></i> Subject</label>
-        <input type="text" name="Subject" placeholder="Enter subject" required>
+        <input type="email" name="email" placeholder="Enter your email address" required>
 
         <label><i class="fa-solid fa-comment form-icon"></i> Message</label>
-        <textarea name="Message" placeholder="Write your message here" required></textarea>
+        <textarea name="message" placeholder="Write your message here" required></textarea>
 
-        <button type="submit">
-            <i class="fa-solid fa-paper-plane"></i> Submit
-        </button>
-
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i> Submit </button>
     </form>
+
 </div>
 
 <footer>
-    © 2025 Nur Asyhilah Ahmad. All Rights Reserved.
+    © 2025 Nur Asyhilah Ahmad. All rights reserved. <br>
+    Recommended browser: Google Chrome. Best viewed at 1366×768 resolution. <br>
+    Last updated: December 2025.
 </footer>
 
 </body>
 </html>
+
 
